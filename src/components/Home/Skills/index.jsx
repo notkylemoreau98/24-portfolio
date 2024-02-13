@@ -41,7 +41,7 @@ const handleSkillImg = (title) => {
 
 const Skills = () => {
   return (
-    <section className='px-5 py-10 md:px-20'>
+    <section className='px-5 py-10 md:px-20' id='skills'>
       <h2 className='relative text-5xl w-full text-center font-bold margin-[0.75rem auto 2rem] md:pb-12 pt-4'>
         Skills.
       </h2>
