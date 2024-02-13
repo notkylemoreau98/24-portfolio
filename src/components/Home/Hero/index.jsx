@@ -12,16 +12,18 @@ const Hero = () => {
   return (
     <section className='pt-0 p-10 ' id='home'>
       <div className='max-w-[1250px] block mx-auto'>
-        <div className='flex flex-col-reverse md:flex-row justify-center mt-10'>
+        <div className='flex flex-col-reverse md:flex-row justify-center md:mt-10'>
           <div className='flex flex-col justify-center text-xl flex-1'>
             <div className='text-center md:text-left md:pl-10'>
-              <h1 className='text-6xl font-bold'>Kyle Moreau</h1>
+              <h1 className='text-5xl md:text-6xl font-bold'>Kyle Moreau</h1>
 
-              <p className='my-6 text-3xl font-semibold'>Web Developer</p>
+              <p className='my-6 text-2xl md:text-3xl font-semibold'>
+                Web Developer
+              </p>
             </div>
             <a
               href='#about'
-              className='block w-[max-content] mt-10 mx-auto text-sm'
+              className='block w-[max-content] mt-5 md:mt-10 mx-auto text-sm'
             >
               <div className='bg-black text-white w-9 h-9 flex items-center justify-center text-xl cursor-pointer transition-all duration-[400ms]'>
                 <ArrowDownLineIcon
@@ -39,7 +41,7 @@ const Hero = () => {
                 href='https://www.linkedin.com/in/kyle-moreau/'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='h-14 w-14 md:h-10 md:w-10'
+                className='h-10 w-10'
               >
                 <LinkedinBoxLineIcon className='h-full w-full text-white bg-[#7c7c7c] p-1 transition-bg duration-300 hover:bg-black' />
               </a>
@@ -47,7 +49,7 @@ const Hero = () => {
                 href='https://github.com/notkylemoreau98'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='h-14 w-14 md:h-10 md:w-10'
+                className='h-10 w-10'
               >
                 <GithubLineIcon className='h-full w-full text-white bg-[#7c7c7c] p-1 transition-bg duration-300 hover:bg-black' />
               </a>
@@ -55,7 +57,7 @@ const Hero = () => {
                 href={Resume}
                 target='_blank'
                 rel='noopener noreferrer'
-                className='h-14 w-14 md:h-10 md:w-10'
+                className='h-10 w-10'
               >
                 <FileTextLineIcon className='h-full w-full text-white bg-[#7c7c7c] p-1 transition-bg duration-300 hover:bg-black' />
               </a>

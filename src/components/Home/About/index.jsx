@@ -9,7 +9,7 @@ const About = () => {
   return (
     <section
       id='about'
-      className='p-10 md:p-20 bg-[#f7f7f7] transition-colors duration-[400ms ]'
+      className='px-5 py-10 md:p-20 bg-[#f7f7f7] transition-colors duration-[400ms ]'
     >
       <div className='max-w-[1250px] block mx-auto'>
         <h2 className='relative text-5xl w-full text-center font-bold margin-[0.75rem auto 2rem] pb-12 pt-4'>

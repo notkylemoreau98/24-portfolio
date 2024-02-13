@@ -35,10 +35,10 @@ const Header = () => {
           style={{ columnGap: '0.5rem' }}
           href='/'
         >
-          <span className='w-12 h-12 text-xl md:w-8 md:h-8 md:text-lg bg-black text-white flex items-center justify-center rounded-full'>
+          <span className='w-8 h-8 bg-black text-white flex items-center justify-center rounded-full'>
             K
           </span>
-          <span className='text-2xl md:text-lg'>Kyle Moreau.</span>
+          <span>Kyle Moreau.</span>
         </a>
 
         <nav className='hidden space-x-16 md:flex'>
@@ -108,7 +108,7 @@ const Header = () => {
 
         <div className='md:hidden'>
           <div
-            className='w-12 h-12 bg-black text-white flex items-center justify-center text-lg cursor-pointer md:hidden'
+            className='w-8 h-8 bg-black text-white flex items-center justify-center text-lg cursor-pointer md:hidden'
             onClick={handleMenuToggle}
           >
             <MenuIcon />
