@@ -48,11 +48,7 @@ const Contact = () => {
       </div>
 
       <div className='mt-16'>
-        <a
-          href='#home'
-          className='block w-[max-content] my-0 mx-auto text-sm'
-          id='home__scroll'
-        >
+        <a href='#home' className='block w-[max-content] my-0 mx-auto text-sm'>
           <div className='relative z-10 bg-[#EA580d] text-white w-9 h-9 flex items-center justify-center text-xl cursor-pointer transition-all duration-[400ms] rounded-sm hover:h-12'>
             <ArrowUpLineIcon
               style={{
