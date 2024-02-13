@@ -29,7 +29,7 @@ const Header = () => {
         isScrolled && 'shadow-md opacity-[98%]'
       }`}
     >
-      <div className='relative h-32 flex justify-between items-center w-100 px-5 md:px-10 lg:px-20'>
+      <div className='relative h-20 md:h-32 flex justify-between items-center w-100 px-5 md:px-10 lg:px-20'>
         <a
           className='flex items-center font-semibold'
           style={{ columnGap: '0.5rem' }}
