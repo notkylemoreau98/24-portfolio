@@ -10,7 +10,7 @@ import '../../../App.css';
 
 const Hero = () => {
   return (
-    <section className='pt-5 p-10 ' id='home'>
+    <section className='pt-0 p-10 ' id='home'>
       <div className='max-w-[1250px] block mx-auto'>
         <div className='flex flex-col-reverse md:flex-row justify-center md:mt-10'>
           <div className='flex flex-col justify-center text-xl flex-1'>
