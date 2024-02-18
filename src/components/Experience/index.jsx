@@ -2,7 +2,7 @@ import FoxLogo from '../../assets/Fox_Dealer_Logo.png';
 
 const Experience = () => {
   return (
-    <section className='bg-[#F7F7F7] px-5 py-10 md:p-20'>
+    <section className='bg-[#F7F7F7] px-5 py-10 md:p-20' id='experience'>
       <div className='max-w-[1250px] block mx-auto'>
         <h2 className='relative text-5xl w-full text-center font-bold margin-[0.75rem auto 2rem] pb-12 pt-4'>
           Experience.
