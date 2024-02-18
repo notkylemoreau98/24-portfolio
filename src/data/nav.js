@@ -16,6 +16,11 @@ const navData = {
       sectionId: 'skills',
     },
     {
+      navTitle: 'Experience',
+      navLink: '#experience',
+      sectionId: 'experience',
+    },
+    {
       navTitle: 'Contact',
       navLink: '#contact',
       sectionId: 'contact',

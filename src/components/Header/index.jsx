@@ -64,38 +64,16 @@ const Header = () => {
             Kyle Moreau
           </h3>
           <ul className='flex flex-col space-y-7'>
-            <li onClick={handleMenuToggle}>
-              <a
-                href='#home'
-                className='relative text-[#dcdcdc] text-lg font-semibold transition-colors duration-300 hover:text-white'
-              >
-                Home
-              </a>
-            </li>
-            <li onClick={handleMenuToggle}>
-              <a
-                href='#about'
-                className='relative text-[#dcdcdc] text-lg font-semibold transition-colors duration-300 hover:text-white'
-              >
-                About Me
-              </a>
-            </li>
-            <li onClick={handleMenuToggle}>
-              <a
-                href='#skills'
-                className='relative text-[#dcdcdc] text-lg font-semibold transition-colors duration-300 hover:text-white'
-              >
-                Skills
-              </a>
-            </li>
-            <li onClick={handleMenuToggle}>
-              <a
-                href='#contact'
-                className='relative text-[#dcdcdc] text-lg font-semibold transition-colors duration-300 hover:text-white'
-              >
-                Contact Me
-              </a>
-            </li>
+            {navData.navItems.map((navItem) => (
+              <li onClick={handleMenuToggle}>
+                <a
+                  href={navItem.navLink}
+                  className='relative text-[#dcdcdc] text-lg font-semibold transition-colors duration-300 hover:text-white'
+                >
+                  {navItem.navTitle}
+                </a>
+              </li>
+            ))}
           </ul>
 
           <div

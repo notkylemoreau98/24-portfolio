@@ -10,7 +10,7 @@ import '../../../App.css';
 
 const Hero = () => {
   return (
-    <section className='pt-0 p-10 ' id='home'>
+    <section className='pt-1 p-10 ' id='home'>
       <div className='max-w-[1250px] block mx-auto'>
         <div className='flex flex-col-reverse md:flex-row justify-center md:mt-10'>
           <div className='flex flex-col justify-center text-xl flex-1'>
@@ -65,7 +65,7 @@ const Hero = () => {
 
             <div className='flex-1 flex justify-center'>
               <img
-                className='relative z-10 rounded-md md:rounded-none'
+                className='relative z-10 rounded-md md:rounded-none w-[450px] md:w-full'
                 src={Headshot}
                 alt='Headshot'
               />
