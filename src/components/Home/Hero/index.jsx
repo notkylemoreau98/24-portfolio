@@ -73,12 +73,12 @@ const Hero = () => {
 
             <div className='flex-1 flex justify-center'>
               <img
-                className='relative z-10 rounded-md md:rounded-none w-[450px] md:w-full'
+                className='relative z-10 rounded-md md:rounded-none w-[450px] md:w-[90%]'
                 src={Headshot}
                 alt='Headshot'
               />
 
-              <div className='hidden md:inline w-100 h-100 absolute bottom-[-0.75rem] right-[-0.75rem] bg-[#4682b4] border-4 border-black z-[5] top-3 w-[220px] md:w-[90%]'></div>
+              <div className='hidden md:inline w-100 h-100 absolute bottom-[-0.75rem] right-0 bg-[#4E9184] border-4 border-black z-[5] top-3 w-[220px] md:w-[85%]'></div>
 
               <img
                 src={CurvedArrow}
