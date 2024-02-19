@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import CloseLineIcon from 'remixicon-react/CloseLineIcon';
 import MenuIcon from 'remixicon-react/Menu4LineIcon';
 import navData from '../../data/nav';
+import debounce from '../../utils/debounce';
 
 const Header = ({ activeSection }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,14 +13,16 @@ const Header = ({ activeSection }) => {
     color: 'white',
   };
 
-  const handleMenuToggle = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const handleMenuToggle = useCallback(() => {
+    setIsMenuOpen((prevState) => !prevState);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 100);
     };
+
+    debounce(handleScroll, 100);
 
     window.addEventListener('scroll', handleScroll);
 

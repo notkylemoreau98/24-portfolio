@@ -32,7 +32,7 @@ const About = () => {
             />
           </div>
 
-          <div className='flex-1 leading-8 text-lg p-6'>
+          <div className='flex-1 leading-8 text-lg p-6 font-[500]'>
             <p className='my-5'>
               Hello! I am a developer based out of Los Angeles, CA with a
               passion for crafting digital experiences, one line of code at a

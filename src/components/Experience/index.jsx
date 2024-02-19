@@ -25,7 +25,7 @@ const Experience = () => {
             <h3 className='text-xl font-semibold mb-4 text-center md:text-left'>
               Responsibilites
             </h3>
-            <ul className='space-y-5 leading-8'>
+            <ul className='space-y-5 leading-8 font-[500]'>
               <li className='text-sm'>
                 Spearheaded the implementation of a standardized peer-to-peer
                 code review system, streamlining development processes and
