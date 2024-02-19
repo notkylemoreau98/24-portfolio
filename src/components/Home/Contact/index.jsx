@@ -7,7 +7,10 @@ import Resume from '../../../assets/Resume_2_7_24.pdf';
 
 const Contact = () => {
   return (
-    <section id='contact' className='text-white bg-[#23212a] p-12'>
+    <section
+      id='contact'
+      className='text-white bg-[#23212a] p-12 md:flex md:flex-col md:justify-center md:min-h-screen'
+    >
       <h2 className='relative text-5xl w-full text-center font-bold margin-[0.75rem auto 2rem] pt-4 pb-6'>
         Get in Touch
       </h2>

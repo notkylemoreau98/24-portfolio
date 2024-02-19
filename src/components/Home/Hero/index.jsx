@@ -9,6 +9,11 @@ import Resume from '../../../assets/Resume_2_7_24.pdf';
 import '../../../App.css';
 
 const Hero = () => {
+  const webKitStyles = {
+    WebkitTextStroke: '1px black',
+    color: 'white',
+  };
+
   return (
     <section className='pt-1 p-10 ' id='home'>
       <div className='max-w-[1250px] block mx-auto'>
@@ -17,7 +22,10 @@ const Hero = () => {
             <div className='text-center md:text-left md:pl-10'>
               <h1 className='text-5xl md:text-6xl font-bold'>Kyle Moreau</h1>
 
-              <p className='my-6 text-2xl md:text-3xl font-semibold'>
+              <p
+                style={webKitStyles}
+                className='my-6 text-2xl md:text-3xl font-semibold'
+              >
                 Software Engineer
               </p>
             </div>

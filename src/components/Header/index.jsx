@@ -3,9 +3,14 @@ import CloseLineIcon from 'remixicon-react/CloseLineIcon';
 import MenuIcon from 'remixicon-react/Menu4LineIcon';
 import navData from '../../data/nav';
 
-const Header = () => {
+const Header = ({ activeSection }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const webKitStyles = {
+    WebkitTextStroke: '1px black',
+    color: 'white',
+  };
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -35,18 +40,24 @@ const Header = () => {
           style={{ columnGap: '0.5rem' }}
           href='/'
         >
-          <span className='w-8 h-8 bg-black text-white flex items-center justify-center rounded-full'>
+          <span className='w-8 h-8 md:w-10 md:h-10 bg-black text-white flex items-center justify-center rounded-full'>
             K
           </span>
-          <span>Kyle Moreau.</span>
+          <span className='md:text-xl md:ml-2'>Kyle Moreau.</span>
         </a>
 
-        <nav className='hidden space-x-16 md:flex'>
+        <nav className='hidden space-x-12 md:flex'>
           {navData.navItems.map((navItem) => (
             <div>
               <a
                 href={navItem.navLink}
-                className='relative text-black text-lg font-semibold transition-colors duration-300 hover:text-orange-600'
+                style={
+                  activeSection === navItem.sectionId ? webKitStyles : undefined
+                }
+                className={
+                  'relative text-xl font-semibold transition-colors duration-300'
+                }
+                key={`desktop-${navItem.sectionId}`}
               >
                 {navItem.navTitle}
               </a>
@@ -69,6 +80,7 @@ const Header = () => {
                 <a
                   href={navItem.navLink}
                   className='relative text-[#dcdcdc] text-lg font-semibold transition-colors duration-300 hover:text-white'
+                  key={`mobile-${navItem.sectionId}`}
                 >
                   {navItem.navTitle}
                 </a>
