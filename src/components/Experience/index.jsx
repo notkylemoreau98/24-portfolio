@@ -28,29 +28,34 @@ const Experience = () => {
             <ul className='space-y-5 leading-8 font-[500]'>
               <li className='text-sm'>
                 Spearheaded the implementation of a standardized peer-to-peer
-                code review system, streamlining development processes and
-                enhancing code quality.
+                code review system department-wide through Bitbucket, resulting
+                in a reduction of client-reported code bugs by over 40%. This
+                initiative significantly enhanced code quality and streamlined
+                development processes.
               </li>
               <li className='text-sm'>
-                Orchestrated a successful migration of the company's codebase
-                from Wordpress to React in collaboration with an offshore team,
-                reducing maintenance overhead and improving scalability.
+                Orchestrated the successful migration of the company's codebase
+                from WordPress to React, leading to a 45% reduction in load
+                times and improved scalability of the platform. These
+                enhancements contributed to a 30-40 point increase in Google
+                Lighthouse performance scores.
               </li>
               <li className='text-sm'>
-                Delivered exceptional technical support by resolving over 2,750
-                tasks across 400+ websites, contributing to enhanced customer
-                satisfaction and retention.
+                Played a pivotal role in strengthening the partnership with GMC
+                Canada by developing 5 Tier 1 vehicle reservation websites using
+                Next.js. These websites, utilized by 100+ dealerships throughout
+                Canada, successfully reserved over 750 Electric Vehicles and
+                drove a 6-figure increase in revenue.
               </li>
               <li className='text-sm'>
-                Played a pivotal role in the development of Tier 1 vehicle
-                reservation websites for leading brands like Toyota and GMC,
-                utilized by over 100 dealerships, driving increased sales and
-                brand engagement.
+                Consistently delivered technical support by resolving over 3,650
+                tasks across 400+ WordPress and React websites, thereby
+                contributing to enhanced customer satisfaction and retention.
               </li>
               <li className='text-sm'>
-                Established a comprehensive training program, facilitating the
-                onboarding and mentorship of 5 new software developers,
-                resulting in accelerated team growth and productivity.
+                Pioneered a comprehensive documented training program, providing
+                structure to the onboarding and mentorship of 5 new software
+                developers.
               </li>
             </ul>
           </div>
